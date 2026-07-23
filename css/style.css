@@ -1,0 +1,247 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+	font-family: 'TikTok Sans', sans-serif;
+}
+
+video {
+	height: 100%;
+	width: 100%;
+	display: block;
+	object-position: center;
+	object-fit: cover;
+}
+
+.reel-page {
+	height: 100vh;
+	/* il video prende tutto lo schermo in base all'altezza dello schermo*/
+	max-width: 512px;
+	min-width: 400px;
+	position: relative;
+}
+
+.reel-header {
+	position: absolute;
+	align-items: center;
+	justify-content: space-between;
+	display: flex;
+	top: 0;
+	left: 0;
+	right: 0;
+	color: gray;
+
+	a {
+		color: #fff;
+		padding: 20px;
+		font-size: 25px;
+	}
+
+	li {
+		display: inline;
+		padding: 10px;
+		font-size: 20px;
+		font-weight: 500;
+	}
+
+	.foryou {
+		position: absolute;
+		width: 34px;
+		height: 5px;
+		top: 52px;
+		right: 148px;
+		display: inline-block;
+		border-radius: 10px;
+		/* background-color: gray;  
+		PERMETTE DI VEDERE LA LINEA 
+		SOLO QUANDO PREMUTO  */
+	}
+
+	.puntino {
+		position: absolute;
+		width: 8px;
+		height: 8px;
+		top: 15px;
+		right: 206px;
+		display: inline-block;
+		border-radius: 50%;
+		background-color: darkred;
+	}
+
+	hr {
+		box-sizing: 10px;
+	}
+
+	li:hover {
+		color: white;
+		font-size: 22px;
+	}
+
+	li:hover>.puntino {
+		background-color: red;
+	}
+
+	li:hover>.foryou {
+		background-color: white;
+	}
+}
+
+/* Sidebar */
+.sidebar {
+	padding: 0 16px;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+	min-height: 400px;
+	right: 0;
+	top: 40%;
+	color: white;
+
+	img {
+		border-radius: 50%;
+		border-color: #fff;
+		border: solid 2px;
+		max-width: 50px;
+	}
+
+	span {
+		position: absolute;
+		top: 36px;
+		right: 28px;
+		font-size: 20px;
+		font-weight: 600;
+		color: white;
+		background-color: red;
+		padding: 0 3px;
+		border-radius: 50px;
+	}
+
+	a {
+		font-size: 30px;
+		color: white;
+	}
+
+	p {
+		text-align: center;
+		padding-top: 2px;
+	}
+
+	.like:active {
+		color: red;
+	}
+
+	.save:active {
+		color: yellow;
+	}
+}
+
+/* Footer */
+
+footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	color: #fff;
+
+	h2 {
+		font-size: 15px;
+		margin-left: 10px;
+	}
+
+	.testo {
+		color: white;
+		margin: 5px 120px 10px 10px;
+	}
+
+	span {
+		font-weight: 600;
+	}
+
+	.footer-black {
+		background-color: black;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 14px 0;
+
+		&>div {
+			width: 70px;
+		}
+
+		a {
+			align-items: center;
+			font-size: 25px;
+			color: grey;
+			text-decoration: none;
+			display: flex;
+			flex-direction: column;
+		}
+
+		span {
+			position: absolute;
+			right: 128px;
+			top: 88px;
+			font-size: 12px;
+			color: white;
+			background-color: red;
+			padding: 1px 6px;
+			border-radius: 20px;
+
+		}
+
+		p {
+			margin-top: 2px;
+			font-size: 10px;
+		}
+
+		a:hover {
+			color: white;
+		}
+
+		.icona-centrale>a {
+			background-color: white;
+			color: black;
+			font-weight: 500;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin: auto;
+			width: 50px;
+			border-radius: 8px;
+			border-style: none solid;
+			border-left-color: rgb(0, 255, 255);
+			border-right-color: rgb(255, 0, 255);
+		}
+
+	}
+}
+
+/* ---------------------
+Regole per evidenziare i blocchi 
+da rimuovere una volta concluso
+--------------------- */
+/* .debug footer {
+	min-height: 100px;
+	border: 2px dashed #fff;
+}
+
+.debug .sidebar {
+	min-width: 80px;
+	min-height: 400px;
+	border: 2px dashed #ff0;
+}
+
+.debug .reel-header {
+	min-height: 50px;
+	border: 2px dashed #fff;
+} */
+
+/* --------------------- */
